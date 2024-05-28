@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Button</title>
+</head>
+<body>
+    <button id="button"
+            style="
+                    padding: 20%;
+                    margin: 50;
+                    font-size: 100px"
+    > Click Me! </button>
+    <script>
+        document.getElementById('button').addEventListener('click', function() {
+            // Generieren einer zufälligen Farbe
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            // Setzen der Hintergrundfarbe auf die zufällige Farbe
+            this.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
