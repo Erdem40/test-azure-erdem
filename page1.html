@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+</head>
+<body>
+    <p> <a href="index.html"> Go to Index </a> </p>
+    <button id="button"
+            style="
+                    padding: 21%;
+                    margin: 30;
+                    font-size: 100px"
+    > Click Me! </button>
+    <script>
+        document.getElementById('button').addEventListener('click', function() {
+            this.style.backgroundColor = 'skyblue';
+        });
+    </script>
+</body>
+</html>
